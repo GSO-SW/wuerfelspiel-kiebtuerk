@@ -27,5 +27,20 @@ namespace WuerfelspielTests
             w = new Wuerfel(anzahlSeiten);
         }
 
+        [TestMethod]
+        public void AnzahlSeiten_RueckgabewertStimmt()
+        {
+            // Arrange
+            Wuerfel w;
+
+            // Act 
+            w = new Wuerfel(6);
+
+            // Assert
+            Assert.AreEqual(6, w.AnzahlSeiten);
+        }
+
+        
+
     }
 }

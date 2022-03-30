@@ -25,7 +25,20 @@ namespace WuerfelspielTests
 
             // Act 
             w = new Wuerfel(anzahlSeiten);
+
         }
 
+        [TestMethod]
+        public void Wuerfel_GibtWertZuruek()
+        {
+            //Arrange
+            Wuerfel w = new Wuerfel();
+
+            //Act
+            int randomzahl = w.Wuerfeln();
+
+            //Assert
+            Asserts.AreNotEqual(null, randomzahl);
+        }
     }
 }

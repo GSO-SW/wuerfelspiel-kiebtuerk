@@ -54,5 +54,21 @@ namespace WuerfelspielTests
             //Assert
             Asserts.AreNotEqual(null, randomzahl);
         }
+
+        [TestMethod]
+        public void SicherungUmschalten_VonTrueAufFalse()
+        {
+            //Arrange
+            Wuerfel w = new Wuerfel();
+            w.Gesichert = true;
+
+            //Act
+            w.SicherungUmschalten();
+
+            //Assert
+            Asserts.AreEqual(false, w.Gesichert);
+        }
+
+
     }
 }

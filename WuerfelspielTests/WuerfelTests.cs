@@ -64,7 +64,7 @@ namespace WuerfelspielTests
 
             //Act
             w.SicherungUmschalten();
-
+            
             //Assert
             Assert.AreEqual(false, w.Gesichert);
         }

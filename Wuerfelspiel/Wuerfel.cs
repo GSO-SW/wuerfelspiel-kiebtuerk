@@ -30,6 +30,14 @@ namespace Wuerfelspiel
             set { gesichert = value; }
         }
 
+        public void SicherungUmschalten()
+        {
+            throw new NotImplementedException();
+        }
 
+        public int Wuerfeln()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

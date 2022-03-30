@@ -43,7 +43,7 @@ namespace WuerfelspielTests
 
 
         [TestMethod]
-        public void Wuerfel_GibtWertZuruek()
+        public void Wuerfeln_GibtWertZuruek()
         {
             //Arrange
             Wuerfel w = new Wuerfel();

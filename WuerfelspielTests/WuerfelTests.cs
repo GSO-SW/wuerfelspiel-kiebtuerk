@@ -16,7 +16,7 @@ namespace WuerfelspielTests
         }
 
         [TestMethod]
-        [ExceptionException(typeof(Exception))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void Wuerfel_KonstructurAnzahlSeitenNichtNull()
         {
             // Arrange
@@ -52,7 +52,7 @@ namespace WuerfelspielTests
             int randomzahl = w.Wuerfeln();
 
             //Assert
-            Asserts.AreNotEqual(null, randomzahl);
+            Assert.AreNotEqual(null, randomzahl);
         }
 
         [TestMethod]
@@ -66,7 +66,7 @@ namespace WuerfelspielTests
             w.SicherungUmschalten();
 
             //Assert
-            Asserts.AreEqual(false, w.Gesichert);
+            Assert.AreEqual(false, w.Gesichert);
         }
 
         [TestMethod]
@@ -80,7 +80,7 @@ namespace WuerfelspielTests
             w.Gesichert = true;
 
             //Assert
-            Asserts.AreEqual(true, w.Gesichert);
+            Assert.AreEqual(true, w.Gesichert);
         }
 
 

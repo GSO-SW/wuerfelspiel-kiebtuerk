@@ -14,5 +14,18 @@ namespace WuerfelspielTests
             // Einfach löschen :)
             Assert.IsTrue(true);// is tatsächlich true :O
         }
+
+        [TestMethod]
+        [ExceptionException(typeof(Exception))]
+        public void Wuerfel_KonstructurAnzahlSeitenNichtNull()
+        {
+            // Arrange
+            Wuerfel w;
+            int anzahlSeiten = -1;
+
+            // Act 
+            w = new Wuerfel(anzahlSeiten);
+        }
+
     }
 }

@@ -69,6 +69,20 @@ namespace WuerfelspielTests
             Asserts.AreEqual(false, w.Gesichert);
         }
 
+        [TestMethod]
+        public void Gesichert_SetUndGet()
+        {
+            //Arrange
+            Wuerfel w = new Wuerfel();
+
+
+            //Act
+            w.Gesichert = true;
+
+            //Assert
+            Asserts.AreEqual(true, w.Gesichert);
+        }
+
 
     }
 }

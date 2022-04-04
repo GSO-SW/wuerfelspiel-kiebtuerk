@@ -52,7 +52,8 @@ namespace WuerfelspielTests
             int randomzahl = w.Wuerfeln();
 
             //Assert
-            Assert.AreNotEqual(null, randomzahl);
+            Debug.Assert(randomzahl > 0);
+            Debug.Assert(randomzahl < 7);
         }
 
         [TestMethod]

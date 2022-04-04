@@ -15,7 +15,14 @@ namespace Wuerfelspiel
 
         public Wuerfel(int anzahlSeiten)
         {
-            this.anzahlSeiten = anzahlSeiten;
+            if (anzahlSeiten < 6)
+            {
+                throw new Exception("anzahl der Seite muss über 6 sein");
+            }
+            else
+            {
+                this.anzahlSeiten = anzahlSeiten;
+            }
         }
 
 
@@ -33,7 +40,15 @@ namespace Wuerfelspiel
 
         public void SicherungUmschalten()
         {
-            throw new NotImplementedException();
+            bool temp = gesichert;
+            if (temp)
+            {
+                gesichert = false;
+            }
+            else
+            {
+                gesichert = true;
+            }
         }
 
         public int Wuerfeln()

@@ -17,7 +17,7 @@ namespace WuerfelspielTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [ExpectedException(typeof(Exception))]
         public void Wuerfel_KonstructurAnzahlSeitenNichtNull()
         {
             // Arrange

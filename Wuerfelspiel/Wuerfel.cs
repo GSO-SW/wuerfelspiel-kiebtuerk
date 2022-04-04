@@ -6,6 +6,7 @@ namespace Wuerfelspiel
     {
         private int anzahlSeiten;
         private bool gesichert;
+        Random rnd = new Random();
 
         public Wuerfel()
         {
@@ -37,7 +38,7 @@ namespace Wuerfelspiel
 
         public int Wuerfeln()
         {
-            throw new NotImplementedException();
+            return rnd.Next(1, 6);
         }
     }
 }

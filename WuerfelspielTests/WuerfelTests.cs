@@ -53,8 +53,7 @@ namespace WuerfelspielTests
             int randomzahl = w.Wuerfeln();
 
             //Assert
-            Debug.Assert(randomzahl > 0);
-            Debug.Assert(randomzahl < 7);
+            Assert.IsTrue(randomzahl < 7 && randomzahl > 0);
         }
 
         [TestMethod]

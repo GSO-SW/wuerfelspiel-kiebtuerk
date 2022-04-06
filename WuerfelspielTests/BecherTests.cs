@@ -15,6 +15,7 @@ namespace WuerfelspielTests
             // Einfach löschen :)
             Assert.IsTrue(true);// is tatsächlich true :O
         }
+
         /*
         [TestMethod]
         public void Becher_()

@@ -11,11 +11,11 @@ namespace WuerfelspielTests
         public void Feld_()
         {
             // Arrange
-            Feld f;
+           // Feld f;
 
             // Act
-            int akzeptierteAugenanzahl = -1;
-            f = new Feld(akzeptierteAugenanzahl);
+            //int akzeptierteAugenanzahl = -1;
+            //f = new Feld(akzeptierteAugenanzahl);
         }
     }
 }
